@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-darkBg: #030014;
+  --color-glassBg: rgba(10, 10, 25, 0.7);
+  --color-glassBorder: rgba(255, 255, 255, 0.08);
+  --color-neonBlue: #00f0ff;
+  --color-neonPurple: #ad00ff;
+  --color-neonCyan: #00ffd1;
+  --color-neonPink: #ff007f;
+  
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-[#030014] text-gray-300 font-sans antialiased overflow-x-hidden selection:bg-neonBlue selection:text-[#030014] transition-colors duration-500;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(173, 0, 255, 0.12) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 240, 255, 0.12) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(0, 255, 209, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  body.light-theme {
+    @apply bg-[#f8fafc] text-[#0f172a] selection:bg-neonPurple selection:text-white;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(173, 0, 255, 0.06) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 240, 255, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(0, 255, 209, 0.04) 0px, transparent 50%);
+  }
+}
+
+/* Glassmorphism classes */
+.glass-panel {
+  background: rgba(10, 10, 25, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.light-theme .glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 15, 38, 0.85);
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+body.light-theme .glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(173, 0, 255, 0.45);
+  box-shadow: 0 0 30px rgba(173, 0, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Glowing text styling */
+.neon-text-blue {
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6), 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 8px rgba(173, 0, 255, 0.6), 0 0 20px rgba(173, 0, 255, 0.2);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 8px rgba(0, 255, 209, 0.6), 0 0 20px rgba(0, 255, 209, 0.2);
+}
+
+.neon-border-blue {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+  border-color: rgba(0, 240, 255, 0.5);
+}
+
+.neon-border-purple {
+  box-shadow: 0 0 15px rgba(173, 0, 255, 0.25);
+  border-color: rgba(173, 0, 255, 0.5);
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030014;
+}
+body.light-theme ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(173, 0, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.5);
+}
+
+/* Grid layout overlay */
+.grid-overlay {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+body.light-theme .grid-overlay {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+}
+
+/* Custom Typing Cursor */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Futuristic animations */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+.pulse-glow {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
