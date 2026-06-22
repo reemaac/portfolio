@@ -37,11 +37,7 @@ const Linkedin = ({ size = 16 }) => (
 );
 
 export default function Footer({ setActivePage }) {
-  const handleDownloadResume = () => {
-    // Generate a dummy resume content or point to a valid placeholder
-    const resumeUrl = '#'; 
-    alert("Downloading Reema_Anayam_Cherakkal_Resume.pdf (Simulated). Connect with me on LinkedIn for the full official CV!");
-  };
+
 
   return (
     <footer className="w-full mt-20 border-t border-glassBorder bg-black/40 backdrop-blur-md relative z-10">
@@ -98,13 +94,14 @@ export default function Footer({ setActivePage }) {
             <h4 className="font-orbitron text-xs font-bold tracking-wider text-white uppercase">
               Assets
             </h4>
-            <button
-              onClick={handleDownloadResume}
-              className="w-full flex items-center justify-center space-x-2 py-2 px-4 rounded-xl border border-neonBlue/40 bg-neonBlue/5 text-neonBlue text-xs font-semibold hover:bg-neonBlue/15 hover:shadow-neon-blue transition-all duration-300"
+            <a
+              href="/portfolio/Reema_Anayam_Cherakkal_Resume.pdf"
+              download="Reema_Anayam_Cherakkal_Resume.pdf"
+              className="w-full flex items-center justify-center space-x-2 py-2 px-4 rounded-xl border border-neonBlue/40 bg-neonBlue/5 text-neonBlue text-xs font-semibold hover:bg-neonBlue/15 hover:shadow-neon-blue transition-all duration-300 text-center"
             >
               <Download size={14} />
               <span>Download Resume</span>
-            </button>
+            </a>
           </div>
         </div>
 

@@ -160,9 +160,7 @@ export default function Home({ setActivePage, theme }) {
     }, 2000);
   };
 
-  const handleDownloadResume = () => {
-    alert("Downloading Reema_Anayam_Cherakkal_Resume.pdf (Simulated). Connect with me on LinkedIn for the full official CV!");
-  };
+
 
   return (
     <div className="w-full pt-28 px-4 sm:px-6 max-w-6xl mx-auto space-y-28">
@@ -204,12 +202,13 @@ export default function Home({ setActivePage, theme }) {
               <ArrowRight size={14} />
             </button>
             
-            <button
-              onClick={handleDownloadResume}
-              className="py-3 px-6 rounded-xl border border-glassBorder bg-white/5 text-xs text-gray-300 font-orbitron hover:bg-white/10 hover:text-white transition-all"
+            <a
+              href="/portfolio/Reema_Anayam_Cherakkal_Resume.pdf"
+              download="Reema_Anayam_Cherakkal_Resume.pdf"
+              className="py-3 px-6 rounded-xl border border-glassBorder bg-white/5 text-xs text-gray-300 font-orbitron hover:bg-white/10 hover:text-white transition-all text-center flex items-center justify-center"
             >
               Download Resume
-            </button>
+            </a>
           </div>
 
           {/* Social Links */}
