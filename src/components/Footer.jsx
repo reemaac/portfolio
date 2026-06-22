@@ -54,7 +54,7 @@ export default function Footer({ setActivePage }) {
                 Ω
               </span>
               <span className="font-orbitron font-bold tracking-wider text-white">
-                NEXUS_AI
+                PORTFOLIO
               </span>
             </div>
             <p className="text-xs text-gray-400 max-w-sm leading-relaxed">
@@ -111,7 +111,7 @@ export default function Footer({ setActivePage }) {
         {/* Divider */}
         <div className="border-t border-glassBorder/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-gray-500 font-mono">
-            &copy; {new Date().getFullYear()} NEXUS_PORTFOLIO. ALL PROTOCOLS RESERVED.
+            &copy; {new Date().getFullYear()} REEMA_PORTFOLIO. ALL PROTOCOLS RESERVED.
           </p>
 
           {/* Social Icons */}

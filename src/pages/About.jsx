@@ -50,23 +50,30 @@ export default function About() {
   const timelineData = [
     {
       year: '2023 - Present',
-      title: 'Bachelor of Technology (Computer Science Engineering)',
-      institution: 'Technical University',
-      description: 'Specializing in internet protocols, machine learning pipelines, and network defense architectures. Maintaining a CGPA of 8.9/10.',
+      title: 'Bachelor of Technology (Computer Science with Cyber Security)',
+      institution: 'KTU (APJ Abdul Kalam Technological University)',
+      description: 'Specializing in computer science, cryptography, network architectures, and cybersecurity defense systems. Maintaining a CGPA of 8.9/10.',
       type: 'graduation'
     },
     {
       year: '2025',
       title: 'PM-VIKAS IoT Assistant Training Programme',
-      institution: 'Ministry of Skill Development & NCVET',
+      institution: 'Ministry of Skill Development & Education',
       description: 'Underwent professional training on node integration, industrial telemetry, AWS cloud interfaces, Linux server administration, and cyber security audits.',
       type: 'training'
     },
     {
       year: '2021 - 2023',
-      title: 'Higher Secondary Education (Science & Computers)',
-      institution: 'National Public School',
-      description: 'Completed physics, mathematics, and computer sciences with score of 94% overall.',
+      title: 'Higher Secondary Education (Biology Science)',
+      institution: 'OHSS Tirurangadi',
+      description: 'Completed Higher Secondary education in Biology Science stream with a score of 89% overall.',
+      type: 'school'
+    },
+    {
+      year: '2021',
+      title: '10th Standard / Matriculation',
+      institution: 'Kuthubuzzaman English Medium Higher Secondary School (KEMS)',
+      description: 'Qualified matriculation examinations with a score of 99% overall.',
       type: 'school'
     }
   ];
@@ -80,11 +87,18 @@ export default function About() {
 
   const certifications = [
     {
-      title: 'PM-VIKAS NCVET IoT Assistant Certification',
-      issuer: 'Ministry of Skill Development & NCVET',
+      title: 'PM-VIKAS IoT Assistant Certification',
+      issuer: 'Ministry of Skill Development & Education',
       date: 'May 2025',
       grade: 'Distinction',
       icon: <Award className="text-neonCyan w-6 h-6" />
+    },
+    {
+      title: 'Cybersecurity Internship Certification',
+      issuer: 'Offenso Hackers Academy',
+      date: 'June 2025',
+      grade: 'Completed (ID: OHACINTR031)',
+      icon: <Shield className="text-neonPurple w-6 h-6" />
     },
     {
       title: 'Cisco Introduction to Networks (CCNA v7)',
@@ -101,11 +115,46 @@ export default function About() {
       icon: <Server className="text-neonPurple w-6 h-6" />
     },
     {
-      title: 'Linux Operating System & Security Essentials',
-      issuer: 'Red Hat Academy / NDG Linux',
-      date: 'Oct 2024',
-      grade: 'Verified',
-      icon: <Shield className="text-neonPink w-6 h-6" />
+      title: 'Cybersecurity Completion Certificate',
+      issuer: 'ADBI Institute (Asian Development Bank Institute)',
+      date: 'April 2026',
+      grade: 'Completed (ID: 170323-177-523-1073)',
+      icon: <Shield className="text-neonBlue w-6 h-6" />
+    },
+    {
+      title: 'Cybersecurity Analyst Job Simulation',
+      issuer: 'TATA / Forage',
+      date: 'April 2026',
+      grade: 'Completed (Code: 4xTciwCiqGjy)',
+      icon: <Award className="text-neonPink w-6 h-6" />
+    },
+    {
+      title: 'IEDC Summit 2025 Participation',
+      issuer: 'Kerala Startup Mission (KSUM) & LBS IT',
+      date: 'Dec 2025',
+      grade: 'Participation (ID: IE-yEOcaK5E65)',
+      icon: <Award className="text-neonBlue w-6 h-6" />
+    },
+    {
+      title: 'Shadow Login (State Level Event)',
+      issuer: 'ASTRA CSE Cyber Security, KMCT IETM',
+      date: 'Feb 2026',
+      grade: 'Participation',
+      icon: <Code className="text-neonPink w-6 h-6" />
+    },
+    {
+      title: 'SUSTA CASE 2025 Competition',
+      issuer: 'IEDC GEC Palakkad',
+      date: 'Dec 2025',
+      grade: 'Participation',
+      icon: <Layers className="text-neonCyan w-6 h-6" />
+    },
+    {
+      title: 'Electrical Safety Seminar (Xenium 3.0)',
+      issuer: 'EEE Dept, IES College of Engineering',
+      date: 'Sept 2025',
+      grade: 'Participation',
+      icon: <Award className="text-neonBlue w-6 h-6" />
     }
   ];
 

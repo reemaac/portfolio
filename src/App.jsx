@@ -20,7 +20,7 @@ export default function App() {
   // Chatbot state shared between Voice and Chat UI
   const [messages, setMessages] = useState([
     { 
-      text: "👋 Initialize connection. I am NEXUS, your cognitive assistant. Ask me about training modules, my embedded IoT prototypes, or security tools!", 
+      text: "👋 Initialize connection. I am your portfolio assistant. Ask me about training modules, my embedded IoT prototypes, or security tools!", 
       sender: 'bot', 
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) 
     }

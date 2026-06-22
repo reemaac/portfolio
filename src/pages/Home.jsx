@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Cpu, Cloud, Brain, Mail, Phone, ArrowRight, CheckCircle, Send, Sparkles } from 'lucide-react';
+import { Shield, Cpu, Cloud, Brain, Mail, Phone, ArrowRight, CheckCircle, Send, Sparkles, Layers } from 'lucide-react';
 import profileImg from '../assets/profile.png';
 
 const Github = ({ size = 20 }) => (
@@ -350,6 +350,125 @@ export default function Home({ setActivePage, theme }) {
               </AnimatePresence>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section className="space-y-12">
+        <div className="text-center space-y-3">
+          <h2 className="font-orbitron font-bold text-2xl sm:text-3xl text-white">
+            Featured Projects
+          </h2>
+          <p className="text-xs text-gray-400 max-w-md mx-auto">
+            A curated showcase of cyber-physical engineering, security tools, and machine learning deployments.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Project 1: Phishing URL Detection */}
+          <div className="glass-panel p-6 rounded-2xl border border-glassBorder hover:border-neonBlue/40 hover:shadow-neon-blue transition-all duration-300 flex flex-col justify-between space-y-6 group bg-black/25">
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="p-3 bg-white/5 rounded-xl border border-glassBorder text-neonBlue">
+                  <Shield className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-mono text-neonBlue bg-neonBlue/5 border border-neonBlue/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-semibold">
+                  Mini Project
+                </span>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-orbitron font-bold text-base text-white group-hover:text-neonBlue transition-colors">
+                  Phishing URL Detection
+                </h3>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  A machine learning-driven security pipeline analyzing URL features, domain reputation, and token distributions to classify and block credential harvesting vectors in real-time.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex flex-wrap gap-1.5">
+                {['Python', 'Scikit-Learn', 'Pandas', 'Flask', 'JavaScript'].map((tech) => (
+                  <span key={tech} className="text-[9px] font-mono bg-white/5 text-gray-300 py-0.5 px-2 rounded border border-glassBorder">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-3 border-t border-glassBorder/60 flex items-center justify-between text-[10px] text-gray-500 font-mono">
+                <span>SYSTEM: CLASSIFIER</span>
+                <span className="text-neonBlue font-semibold">ACTIVE STATUS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2: IoT Assistant Node */}
+          <div className="glass-panel p-6 rounded-2xl border border-glassBorder hover:border-neonCyan/40 hover:shadow-neon-cyan transition-all duration-300 flex flex-col justify-between space-y-6 group bg-black/25">
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="p-3 bg-white/5 rounded-xl border border-glassBorder text-neonCyan">
+                  <Cpu className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-mono text-neonCyan bg-neonCyan/5 border border-neonCyan/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-semibold">
+                  IoT / Telemetry
+                </span>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-orbitron font-bold text-base text-white group-hover:text-neonCyan transition-colors">
+                  IoT Assistant Node
+                </h3>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  Microcontrolled sensory hardware incorporating low-power sleep loops, multi-sensor grids, and an encrypted MQTT telemetry payload bridge directly to AWS IoT Core endpoints.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex flex-wrap gap-1.5">
+                {['ESP32', 'C++', 'MQTT', 'AWS IoT Core', 'DynamoDB'].map((tech) => (
+                  <span key={tech} className="text-[9px] font-mono bg-white/5 text-gray-300 py-0.5 px-2 rounded border border-glassBorder">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-3 border-t border-glassBorder/60 flex items-center justify-between text-[10px] text-gray-500 font-mono">
+                <span>SYSTEM: EMBEDDED</span>
+                <span className="text-neonCyan font-semibold">VERIFIED</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 3: Network Security Sniffer */}
+          <div className="glass-panel p-6 rounded-2xl border border-glassBorder hover:border-neonPurple/40 hover:shadow-neon-purple transition-all duration-300 flex flex-col justify-between space-y-6 group bg-black/25">
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="p-3 bg-white/5 rounded-xl border border-glassBorder text-neonPurple">
+                  <Layers className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-mono text-neonPurple bg-neonPurple/5 border border-neonPurple/20 px-2.5 py-0.5 rounded-full uppercase tracking-wider font-semibold">
+                  Cyber Defense
+                </span>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-orbitron font-bold text-base text-white group-hover:text-neonPurple transition-colors">
+                  Network Packet Auditor
+                </h3>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  Real-time network traffic sniffer capturing raw packet streams to run analysis, detect address resolution anomalies (ARP spoofing), and flag packet injection signatures.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex flex-wrap gap-1.5">
+                {['Python', 'Scapy', 'Wireshark', 'Bash Shell', 'Kali'].map((tech) => (
+                  <span key={tech} className="text-[9px] font-mono bg-white/5 text-gray-300 py-0.5 px-2 rounded border border-glassBorder">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-3 border-t border-glassBorder/60 flex items-center justify-between text-[10px] text-gray-500 font-mono">
+                <span>SYSTEM: UTILITY</span>
+                <span className="text-neonPurple font-semibold">SECURED</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

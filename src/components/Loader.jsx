@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 export default function Loader({ onComplete }) {
   const [progress, setProgress] = useState(0);
-  const [status, setStatus] = useState('BOOTING COGNITIVE ENGINE...');
+  const [status, setStatus] = useState('BOOTING PORTFOLIO ENGINE...');
 
   const statuses = [
-    { threshold: 15, text: 'BOOTING COGNITIVE ENGINE...' },
+    { threshold: 15, text: 'BOOTING PORTFOLIO ENGINE...' },
     { threshold: 35, text: 'ESTABLISHING NEURAL MATRIX...' },
     { threshold: 55, text: 'LOADING IoT PORT PROTOCOLS...' },
     { threshold: 75, text: 'DECRYPTING CYBERSECURITY LAYER...' },
     { threshold: 90, text: 'SYNAPSE LINK COMPLETED.' },
-    { threshold: 100, text: 'WELCOME TO NEXUS_AI.' }
+    { threshold: 100, text: 'WELCOME TO PORTFOLIO.' }
   ];
 
   useEffect(() => {
@@ -77,7 +77,7 @@ export default function Loader({ onComplete }) {
       {/* Terminal Loading Stats */}
       <div className="w-full max-w-sm font-mono text-center">
         <h2 className="font-orbitron font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-neonBlue to-neonPurple tracking-widest mb-2">
-          NEXUS_AI PORTFOLIO
+          REEMA AC PORTFOLIO
         </h2>
         
         {/* Status Text */}

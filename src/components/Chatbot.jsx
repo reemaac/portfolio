@@ -17,7 +17,7 @@ export default function Chatbot({ theme, isOpen, setIsOpen, messages, setMessage
   const responses = [
     {
       keywords: ['hi', 'hello', 'hey', 'greetings'],
-      answer: "Greetings! I am NEXUS, your cognitive portfolio agent. Ask me about technical skills, the PM-VIKAS program, or how to contact Reema!"
+      answer: "Greetings! I am your portfolio assistant. Ask me about technical skills, the PM-VIKAS program, or how to contact Reema!"
     },
     {
       keywords: ['pm-vikas', 'vikas', 'program', 'training', 'pmvikas'],
@@ -25,7 +25,7 @@ export default function Chatbot({ theme, isOpen, setIsOpen, messages, setMessage
     },
     {
       keywords: ['project', 'projects', 'portfolio', 'work'],
-      answer: "Some key projects featured here include:\n1. IoT Assistant Node - Cloud telemetry integration.\n2. Network Security Sniffer - Real-time traffic monitoring & threat detection.\n3. Smart Home Automated Dashboard - Remote relays & sensory control.\nCheck out the Home and PM-VIKAS pages to explore details!"
+      answer: "Some key projects featured here include:\n1. Phishing URL Detection - Machine learning-driven analysis to identify malicious domains.\n2. IoT Assistant Node - Cloud telemetry integration under PM-VIKAS.\n3. Network Packet Auditor - Real-time network traffic sniffer capturing raw packet streams.\nCheck out the Home and PM-VIKAS pages to explore details!"
     },
     {
       keywords: ['skills', 'skills?', 'languages', 'tech', 'stack', 'technologies'],
@@ -40,8 +40,8 @@ export default function Chatbot({ theme, isOpen, setIsOpen, messages, setMessage
       answer: "You can download my full professional Resume by clicking the 'Download Resume' button in the Hero or Footer section. It details academic scoring, IoT projects, and certifications!"
     },
     {
-      keywords: ['who are you', 'what are you', 'nexus', 'name'],
-      answer: "I am NEXUS, an autonomous interface built to answer recruiter queries, highlight project milestones, and provide virtual guide support across this portfolio."
+      keywords: ['who are you', 'what are you', 'assistant', 'name'],
+      answer: "I am your portfolio assistant, an autonomous interface built to answer recruiter queries, highlight project milestones, and provide support across this portfolio."
     }
   ];
 
@@ -105,7 +105,7 @@ export default function Chatbot({ theme, isOpen, setIsOpen, messages, setMessage
                 <Bot size={18} className="animate-pulse-slow" />
               </div>
               <div>
-                <h3 className="font-orbitron font-bold text-xs tracking-wider text-white">NEXUS CORE</h3>
+                <h3 className="font-orbitron font-bold text-xs tracking-wider text-white">PORTFOLIO CORE</h3>
                 <span className="text-[10px] text-neonCyan flex items-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-neonCyan inline-block mr-1.5 animate-ping" />
                   Cognitive Node Online
