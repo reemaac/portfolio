@@ -214,10 +214,10 @@ export default function Home({ setActivePage, theme }) {
 
           {/* Social Links */}
           <div className="flex justify-center lg:justify-start space-x-4 pt-2">
-            <a href="https://github.com/reemaaac" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all">
+            <a href="https://github.com/reemaac" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-neonBlue hover:scale-110 transition-all">
+            <a href="https://www.linkedin.com/in/reema-shafi-820094282" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-neonBlue hover:scale-110 transition-all">
               <Linkedin size={20} />
             </a>
             <a href="mailto:reema.ac04@gmail.com" className="text-gray-400 hover:text-neonPurple hover:scale-110 transition-all">

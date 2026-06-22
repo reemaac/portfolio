@@ -33,7 +33,7 @@ export default function Chatbot({ theme, isOpen, setIsOpen, messages, setMessage
     },
     {
       keywords: ['contact', 'email', 'phone', 'reach', 'linkedin', 'github'],
-      answer: "You can reach out through the Contact form at the bottom of the home page, or connect directly via:\n• Email: reema.ac04@gmail.com\n• LinkedIn: linkedin.com/in/reema-ai-iot\n• GitHub: github.com/reemaaac"
+      answer: "You can reach out through the Contact form at the bottom of the home page, or connect directly via:\n• Email: reema.ac04@gmail.com\n• LinkedIn: linkedin.com/in/reema-shafi-820094282\n• GitHub: github.com/reemaac"
     },
     {
       keywords: ['resume', 'cv', 'download'],

@@ -117,7 +117,7 @@ export default function Footer({ setActivePage }) {
           {/* Social Icons */}
           <div className="flex items-center space-x-4">
             <a 
-              href="https://github.com/reemaaac" 
+              href="https://github.com/reemaac" 
               target="_blank" 
               rel="noreferrer"
               className="p-2 rounded-lg bg-white/5 border border-glassBorder text-gray-400 hover:text-white hover:border-white/20 transition-all"
@@ -125,7 +125,7 @@ export default function Footer({ setActivePage }) {
               <Github size={16} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/reema-shafi-820094282" 
               target="_blank" 
               rel="noreferrer"
               className="p-2 rounded-lg bg-white/5 border border-glassBorder text-gray-400 hover:text-neonBlue hover:border-neonBlue/20 transition-all"
