@@ -683,6 +683,18 @@ export const journalDays = [
         label: "Simulation Workflow",
         body: React.createElement("p", {}, "Connected sensors to Arduino and observed live readings. Used serial monitor and virtual instruments to confirm correct readings."),
       },
+      {
+        label: "GitHub Link",
+        body: React.createElement("a", {
+          href: "https://github.com/reemaac/tinkercad/tree/main/SENSOR",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-neonCyan hover:underline inline-flex items-center gap-1 font-mono text-xs"
+        }, [
+          "reemaac/tinkercad/SENSOR",
+          React.createElement("span", {}, " ↗")
+        ])
+      },
     ],
   },
   {
@@ -704,6 +716,18 @@ export const journalDays = [
         label: "Control Techniques",
         body: React.createElement("p", {}, "Used PWM, digital switching, and driver circuits to safely control actuators from Arduino outputs."),
       },
+      {
+        label: "GitHub Link",
+        body: React.createElement("a", {
+          href: "https://github.com/reemaac/tinkercad/tree/main/ACTUALATOR",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-neonPurple hover:underline inline-flex items-center gap-1 font-mono text-xs"
+        }, [
+          "reemaac/tinkercad/ACTUALATOR",
+          React.createElement("span", {}, " ↗")
+        ])
+      },
     ],
   },
   {
@@ -724,6 +748,18 @@ export const journalDays = [
       {
         label: "Design Considerations",
         body: React.createElement("div", {"className":"callout"}, [React.createElement("div", {"className":"callout-label"}, "Important Notes"), React.createElement("div", {"className":"callout-text"}, "Ensure correct power levels, use transistors or relays for high-current loads, and validate the logic flow from sensor readings to actuator commands.")]),
+      },
+      {
+        label: "GitHub Link",
+        body: React.createElement("a", {
+          href: "https://github.com/reemaac/tinkercad/tree/main/COMBINATION",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-neonBlue hover:underline inline-flex items-center gap-1 font-mono text-xs"
+        }, [
+          "reemaac/tinkercad/COMBINATION",
+          React.createElement("span", {}, " ↗")
+        ])
       },
     ],
   },
@@ -770,6 +806,18 @@ export const journalDays = [
       {
         label: "Key Takeaways",
         body: React.createElement("div", {"className":"callout"}, [React.createElement("div", {"className":"callout-label"}, "Summary"), React.createElement("div", {"className":"callout-text"}, "Reviewed wiring best practices, simulation troubleshooting, and how virtual prototyping helps design reliable embedded systems.")]),
+      },
+      {
+        label: "GitHub Link",
+        body: React.createElement("a", {
+          href: "https://github.com/reemaac/tinkercad/tree/main",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-neonPurple hover:underline inline-flex items-center gap-1 font-mono text-xs"
+        }, [
+          "reemaac/tinkercad",
+          React.createElement("span", {}, " ↗")
+        ])
       },
     ],
   },
