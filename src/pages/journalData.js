@@ -823,29 +823,35 @@ export const journalDays = [
   },
   {
     n: "27",
-    title: "Mini Project Kickoff — Plant Monitor",
+    title: "Mini Project Kickoff — Smart Room & Obstacle Detector",
     subtitle: "Dr Shajulin Benedict",
-    tags: ["Mini Project","IoT","Arduino","Sensors"],
+    tags: ["Mini Project","IoT","Arduino","Sensors","Obstacle Detection"],
     accent: "gold",
     blocks: [
       {
         label: "Project Scope",
-        body: React.createElement("p", {}, ["Defined the mini project as an ", React.createElement("strong", {}, "IoT plant-monitoring system"), " that tracks soil moisture, light level, and basic health status. The goal was to design a complete prototype using Arduino or an ESP board with a clear build plan."]),
+        body: React.createElement("p", {}, ["Defined the mini project as a ", React.createElement("strong", {}, "Smart Room Monitoring and Obstacle Detection System"), " designed to enhance safety, security, and climate tracking. The goal was to plan a prototype using Arduino that combines human detection, environmental monitoring, and automatic physical warning response."]),
       },
       {
         label: "Component Selection",
-        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [React.createElement("li", {}, "Soil moisture sensor for soil hydration monitoring"), React.createElement("li", {}, "Light sensor (LDR) to measure ambient brightness"), React.createElement("li", {}, "Arduino/ESP microcontroller for data acquisition"), React.createElement("li", {}, "Buzzer or LED alert for threshold warnings")]),
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Ultrasonic sensor (HC-SR04) for obstacle distance tracking"),
+          React.createElement("li", {}, "PIR sensor for motion and human presence detection"),
+          React.createElement("li", {}, "DHT11 sensor for room temperature and humidity monitoring"),
+          React.createElement("li", {}, "Servo motor to actuate a physical safety gate or warning barrier"),
+          React.createElement("li", {}, "Buzzer and LEDs for local visual/audio alerts")
+        ]),
       },
       {
         label: "Design Workflow",
-        body: React.createElement("p", {}, ["Planned the prototype in ", React.createElement("strong", {}, "Tinkercad"), ", mapped the wiring, and wrote the project structure before implementation: sensor read, threshold detection, alert logic, and optional serial/cloud output."]),
+        body: React.createElement("p", {}, ["Planned the circuit connections in ", React.createElement("strong", {}, "Tinkercad"), ", establishing a structured code flow: read climate data when motion is present, constantly poll the ultrasonic distance, trigger warning indicators if obstacles breach thresholds, and actuate the servo accordingly."]),
       },
       {
         label: "Next Steps",
-        body: React.createElement("div", {"className":"callout tip"}, [React.createElement("div", {"className":"callout-label"}, "Project Planning"), React.createElement("div", {"className":"callout-text"}, "Keep the first build simple: read sensors, display results on serial monitor, and trigger one alert. Add cloud logging or dashboard later once the core circuit is working.")]),
+        body: React.createElement("div", {"className":"callout tip"}, [React.createElement("div", {"className":"callout-label"}, "Project Planning"), React.createElement("div", {"className":"callout-text"}, "Keep the first integration iteration focused on reliable sensor reading and logic branching (e.g., verifying PIR and ultrasonic distance formulas) before wiring the servo and high-power actuators.")]),
       },
       {
-        exercises: ["Sketch the mini project circuit on paper and label every wire","Choose appropriate sensor thresholds for moisture and light","Write a basic Arduino sketch that reads sensors and prints values to serial","Plan a short demo narrative: what the prototype should show and why it matters"],
+        exercises: ["Draw the wiring diagram for ultrasonic, PIR, DHT11, and servo inputs on Arduino","Set distance threshold parameters for obstacle warning zones","Write mock logic determining when the warning buzzer should sound","Plan the demonstration scenario simulating room intrusion and obstacle detection"],
       },
     ],
   },
@@ -858,22 +864,38 @@ export const journalDays = [
     blocks: [
       {
         label: "Build Summary",
-        body: React.createElement("p", {}, ["Implemented the mini project prototype in ", React.createElement("strong", {}, "Tinkercad"), " and reviewed the integration of sensors, microcontroller, and alert components. Verified that readings were consistent and the system could indicate plant health reliably."]),
+        body: React.createElement("p", {}, ["Successfully built and simulated the ", React.createElement("strong", {}, "Smart Room Monitoring and Obstacle Detection System"), " in Tinkercad. Integrated human presence detection, live room temperature/humidity logging, and distance-based obstacle warnings that trigger physical servo gate actuation."]),
       },
       {
         label: "Testing & Debugging",
-        body: React.createElement("div", {"className":"callout"}, [React.createElement("div", {"className":"callout-label"}, "Key Testing"), React.createElement("div", {"className":"callout-text"}, "Validated sensor output ranges, adjusted resistor values, fixed wiring mistakes, and confirmed that the alert triggers at the intended thresholds.")]),
+        body: React.createElement("div", {"className":"callout"}, [React.createElement("div", {"className":"callout-label"}, "System Testing"), React.createElement("div", {"className":"callout-text"}, "Calibrated ultrasonic sensor pulse duration-to-distance mapping, resolved signal noise on the PIR pin, and adjusted the servo motor sweep angles to prevent physical binding during alerts.")]),
       },
       {
         label: "Project Demo",
-        body: React.createElement("p", {}, "Prepared a short demonstration of the prototype in lab: sensor values flow to the serial monitor, the alert LED/buzzer activates when moisture is low, and the system can be extended with cloud logging."),
+        body: React.createElement("p", {}, "Demonstrated the fully functional prototype: the system logs climate data on motion detection, sounds a buzzer warning as an obstacle approaches, and rotates the servo motor by 90 degrees to deploy a safety barrier when the obstacle is within 20cm."),
       },
       {
         label: "Lessons Learned",
-        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [React.createElement("li", {}, "Prototyping in Tinkercad saves time and makes debugging easier."), React.createElement("li", {}, "Clear wiring and power planning reduce issues in embedded builds."), React.createElement("li", {}, "Start with one sensor path, then expand to additional features.")]),
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Virtual prototyping in Tinkercad helps resolve power supply and noise issues before physical wiring."),
+          React.createElement("li", {}, "State machine logic is crucial when managing multiple overlapping sensor thresholds."),
+          React.createElement("li", {}, "Incremental testing of individual sensor paths ensures faster debugging.")
+        ]),
       },
       {
-        exercises: ["Document the final circuit and code flow for the mini project","List 3 possible enhancements for the next version (cloud, mobile alert, data logging)","Prepare a short demo script explaining the problem, solution, and results","Reflect on what worked and what still needs refinement for a real prototype"],
+        label: "GitHub Link",
+        body: React.createElement("a", {
+          href: "https://github.com/reemaac/Smart-Room-Monitoring-and-Obstacle-Detection-System.git",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          className: "text-neonCyan hover:underline inline-flex items-center gap-1 font-mono text-xs"
+        }, [
+          "reemaac/Smart-Room-Monitoring-and-Obstacle-Detection-System",
+          React.createElement("span", {}, " ↗")
+        ])
+      },
+      {
+        exercises: ["Document the final source code and circuit schematics in the repository","List future enhancements (e.g., ESP8266/ESP32 Wi-Fi module integrations, Blynk dashboard logging)","Record a video demo showcasing the obstacle detector safety response","Optimize threshold detection latency in the Arduino control loop"],
       },
     ],
   },
