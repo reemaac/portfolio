@@ -899,4 +899,163 @@ export const journalDays = [
       },
     ],
   },
+  {
+    n: "29",
+    accent: "rust",
+    title: "Arduino Workshop",
+    subtitle: "Dr Shajulin Benedict - Arduino workshop",
+    tags: ["Arduino","Workshop","Hands-on","Microcontroller"],
+    blocks: [
+      {
+        label: "Workshop Focus",
+        body: React.createElement("p", {}, ["Hands-on Arduino workshop covering board setup, basic circuit connections, and writing sketches for LED, sensor, and actuator control. Students built simple circuits and tested them on real hardware."]),
+      },
+      {
+        label: "Key Skills",
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Setting up Arduino IDE and selecting the correct board and port."),
+          React.createElement("li", {}, "Writing and uploading sketches for blinking LEDs, reading analog values, and controlling outputs."),
+          React.createElement("li", {}, "Debugging basic wiring and sketch issues using the serial monitor.")
+        ]),
+      },
+      {
+        exercises: [
+          "Build and test a basic LED blink circuit using Arduino",
+          "Read a potentiometer value and print it to the serial monitor",
+          "Control a small motor or buzzer using a digital output pin"
+        ],
+      },
+    ],
+  },
+  {
+    n: "30",
+    accent: "sage",
+    title: "Sensors & Actuators Exam",
+    subtitle: "Sensors and actuators combined circuit exam",
+    tags: ["Sensors","Actuators","Exam","Circuits"],
+    blocks: [
+      {
+        label: "Exam Objective",
+        body: React.createElement("p", {}, ["Evaluation of combined sensor and actuator circuits to verify understanding of signal flow, interface requirements, and correct component selection for embedded control systems."]),
+      },
+      {
+        label: "Exam Topics",
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Sensor signal conditioning and analog/digital interfacing."),
+          React.createElement("li", {}, "Actuator drive requirements and safe wiring practices."),
+          React.createElement("li", {}, "Designing a simple control circuit that responds to sensor inputs.")
+        ]),
+      },
+      {
+        exercises: [
+          "Draw a combined circuit diagram for one sensor and one actuator",
+          "Explain how sensor output triggers actuator action in the exam circuit",
+          "List precautions for power and grounding in mixed sensor/actuator systems"
+        ],
+      },
+    ],
+  },
+  {
+    n: "31",
+    accent: "rust",
+    title: "WOKWI ESP32 Practice",
+    subtitle: "Dr Shajulin Benedict - WOKWI ESP32 simulator practice",
+    tags: ["ESP32","Simulator","WOKWI","Practice"],
+    blocks: [
+      {
+        label: "Practice Session",
+        body: React.createElement("p", {}, [
+          "Used the WOKWI ESP32 simulator to prototype code and circuit behavior before hardware testing. Practiced GPIO control, serial output, and simple IoT examples in a browser-based environment. The project can be accessed at ",
+          React.createElement("a", {
+            href: "https://wokwi.com/projects/467504928341651457",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "text-neonPurple hover:underline inline-flex items-center gap-1 font-mono text-xs"
+          }, [
+            "https://wokwi.com/projects/467504928341651457",
+            React.createElement("span", {}, " ↗")
+          ]),
+          "."
+        ]),
+      },
+      {
+        label: "Simulation Highlights",
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Running ESP32 sketches in WOKWI without physical hardware."),
+          React.createElement("li", {}, "Testing sensor inputs and output responses in a virtual circuit."),
+          React.createElement("li", {}, "Iterating quickly on code to validate behavior before deployment.")
+        ]),
+      },
+      {
+        exercises: [
+          "Create an ESP32 project in WOKWI and blink two LEDs alternately",
+          "Simulate reading a sensor value and print it over serial",
+          "Modify the sketch to add a digital output control based on a virtual input"
+        ],
+      },
+    ],
+  },
+  {
+    n: "32",
+    accent: "sage",
+    title: "IoT Quiz",
+    subtitle: "Quiz on Internet of Things",
+    tags: ["Quiz","IoT","Assessment","Networks"],
+    blocks: [
+      {
+        label: "Quiz Focus",
+        body: React.createElement("p", {}, ["Assessment covering Internet of Things concepts, architectures, communication protocols, and basic embedded design principles learned during the course."]),
+      },
+      {
+        label: "Quiz Topics",
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "IoT system components and data flow."),
+          React.createElement("li", {}, "Common connectivity standards and their use cases."),
+          React.createElement("li", {}, "Basic design considerations for sensor/actuator systems.")
+        ]),
+      },
+      {
+        exercises: [
+          "Review the key IoT terms and definitions from previous lessons",
+          "Summarize one IoT example with sensors, processing, and network communication",
+          "Write a short explanation of why security matters in IoT systems"
+        ],
+      },
+    ],
+  },
+  {
+    n: "33",
+    accent: "gold",
+    title: "Final Assessment & Program Completion",
+    subtitle: "Comprehensive evaluation & official final day",
+    tags: ["Assessment","Certification","Evaluation","Final Day"],
+    blocks: [
+      {
+        label: "Final Evaluation",
+        body: React.createElement("p", {}, ["Conducted the final comprehensive program assessment verifying practical and theoretical skills in IoT architectures, Arduino & ESP32 prototyping, network topology configuration, and cyber defense protocols."]),
+      },
+      {
+        label: "Program Achievements",
+        body: React.createElement("ul", {"style":{"marginLeft":"1.5rem","lineHeight":"1.8"}}, [
+          React.createElement("li", {}, "Mastered hardware and virtual simulation workflows across Tinkercad and WOKWI."),
+          React.createElement("li", {}, "Designed, simulated, and deployed a custom Smart Room and Obstacle Detection mini-project."),
+          React.createElement("li", {}, "Validated secure data communication, routing principles, and local/cloud telemetry configurations.")
+        ]),
+      },
+      {
+        label: "Graduation & Credentials",
+        body: React.createElement("div", {"className":"callout tip"}, [
+          React.createElement("div", {"className":"callout-label"}, "Program Status: Completed"),
+          React.createElement("div", {"className":"callout-text"}, "Officially completed the intensive 33-day PM-VIKAS IoT Assistant training program at IIIT Kottayam. Awarded the official certification under Skill India and Ministry of Education guidelines.")
+        ]),
+      },
+      {
+        exercises: [
+          "Submit the final project code and documentation for review",
+          "Verify and log official PM-VIKAS program credentials",
+          "Export final project files, simulations, and telemetry reports"
+        ],
+      },
+    ],
+  },
 ];
